@@ -478,7 +478,7 @@ var featuresStores = {
     "Rapidez":10,
     "Atención_en_cajas":9.1,
     "Ofertas_y_precios":10,
-    "Surtido_y_existencias":50,
+    "Surtido_y_existencias":5.0,
     "Orden_y_Limpieza":7.3,
     "Seguridad_Industrial":7.2,
     "Estado":"Cd. Mx.",
