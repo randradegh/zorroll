@@ -150,7 +150,7 @@ var featuresStores = {
     "Ofertas_y_precios":8.8,
     "Surtido_y_existencias":5,
     "Orden_y_Limpieza":10,
-    "Seguridad_Industrial":100,
+    "Seguridad_Industrial":10,
     "Estado":"Edo. Mex.",
     "Municipio":"Ecatepec de Morelos"
     }
@@ -172,7 +172,7 @@ var featuresStores = {
     "Ofertas_y_precios":10,
     "Surtido_y_existencias":10,
     "Orden_y_Limpieza":73,
-    "Seguridad_Industrial":100,
+    "Seguridad_Industrial":10,
     "Estado":"Edo. Mex.",
     "Municipio":"Ecatepec de Morelos"
     }
