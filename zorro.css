@@ -1,0 +1,15 @@
+/* Zorro styles */
+
+#atributos {
+    background-color: color:rgb(46,64,83);
+    padding: 5px
+}
+
+table {
+    color: white;
+}
+
+th {
+    color: rgb(39, 55, 70);
+    font-weight: bold;
+}
