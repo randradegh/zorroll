@@ -30,7 +30,7 @@
 
 <div id='map'></div>
 
-<script src="data_enero_2019_geojson.js" type="text/javascript"></script>
+<script src="data_enero_2019.v2.0_geojson.js" type="text/javascript"></script>
 
 <script>
 	var periodo = 'Enero de 2019';
@@ -79,15 +79,15 @@
 			popupContent += '<tr><th>' + feature.properties.Tienda.trim() + '</th></tr>'; 
 			popupContent += '<tr><td>' + periodo + '</td></tr>';
 			popupContent += '<tr><td>' + '&nbsp' + '</td></tr>';
-			popupContent += '<tr><td>Trato Amable: ' + feature.properties.Trato_amable + '</td></tr>';
-			popupContent += '<tr><td>Rapidez: ' + feature.properties.Rapidez + '</td></tr>';
-			popupContent += '<tr><td>Atención en cajas: ' + feature.properties.Atención_en_cajas + '</td></tr>';
-			popupContent += '<tr><td>Ofertas y Precios: ' + feature.properties.Ofertas_y_precios + '</td></tr>';
-			popupContent += '<tr><td>Surtido y existencias: ' + feature.properties.Surtido_y_existencias + '</td></tr>';
-			popupContent += '<tr><td>Orden y Limpieza: ' + feature.properties.Orden_y_Limpieza + '</td></tr>';
-			popupContent += '<tr><td>Seguridad Industrial: ' + feature.properties.Seguridad_Industrial + '</td></tr>';
+			popupContent += '<tr><td>Trato Amable: ' + (feature.properties.Trato_amable * 10) + '</td></tr>';
+			popupContent += '<tr><td>Rapidez: ' + (feature.properties.Rapidez *10) + '</td></tr>';
+			popupContent += '<tr><td>Atención en cajas: ' + (feature.properties.Atención_en_cajas * 10) + '</td></tr>';
+			popupContent += '<tr><td>Ofertas y Precios: ' + (feature.properties.Ofertas_y_precios *10) + '</td></tr>';
+			popupContent += '<tr><td>Surtido y existencias: ' + (feature.properties.Surtido_y_existencias *10) + '</td></tr>';
+			popupContent += '<tr><td>Orden y Limpieza: ' + (feature.properties.Orden_y_Limpieza *10) + '</td></tr>';
+			popupContent += '<tr><td>Seguridad Industrial: ' + (feature.properties.Seguridad_Industrial *10) + '</td></tr>';
 			popupContent += '<tr><td>' + '&nbsp' + '</td></tr>';
-			popupContent += '<tr><th>Calificacion promedio: ' + (suma/7).toFixed(2) + '</th></tr>';
+			popupContent += '<tr><th>Calificacion Total: ' + feature.properties.Calificación_Total + '</th></tr>';
 			popupContent += '</table>'
 			popupContent += '</div>';
 		}
